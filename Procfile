@@ -1,0 +1,1 @@
+web: gunicorn evos_bot.wsgi --log-file -
