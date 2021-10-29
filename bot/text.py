@@ -1,0 +1,8 @@
+city = {
+    0: ("TOSHKENT", "FERGANA"),
+    1: ("QURGULI", "QASHQADARYO"),
+    2: ("ANDIJON", "QO`QON"),
+    3: ("NAMANGAN", "SAMARQAND")
+}
+
+city1 = ["TOSHKENT", "FERGANA", "QURGULI", "QASHQADARYO", "ANDIJON", "QO`QON", "NAMANGAN", "SAMARQAND"]
