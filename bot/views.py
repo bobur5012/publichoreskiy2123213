@@ -154,8 +154,6 @@ def echo_all(message):
             bot.send_message(message.chat.id, "Tug'ilgan kuningizni kiriting.\n Masalan 2000-12-20")
 
 
-
-
 @bot.callback_query_handler(func=lambda call: True)
 def callback(call):
     if call.data == "1":
@@ -201,7 +199,6 @@ def callback(call):
         bot.send_message(call.chat.id, "TIl o`zgardi", reply_markup=markup)
 
 
-
 @bot.message_handler(content_types='contact')
 def contact(message):
 
@@ -224,7 +221,6 @@ def location(message):
 
     bot_user = User.objects.get(user_id=message.chat.id)
     if bot_user.step == 5:
-
         bot_user.longitude = message.location.longitude
         bot_user.latitude = message.location.latitude
         bot_user.step += 1
