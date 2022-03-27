@@ -5,13 +5,13 @@ from .models import User
 from .buttons import *
 from .text import *
 
-bot = TeleBot("2078494870:AAHzAvPN3cHCSul8V__6JvqmhtT4w8SN_c0")
+bot = TeleBot("1642468460:AAEZCYdkCVrROASe5Re1dsuvsosMhfJA_TE")
 
 
 @csrf_exempt
 def index(request):
     if request.method == 'GET':
-        return HttpResponse("<a href='http://t.me/dkarimoff96'>Created by</>")
+        return HttpResponse("<a href='http://t.me/busteruz'>Created by</>")
     if request.method == 'POST':
         bot.process_new_updates([
             telebot.types.Update.de_json(
